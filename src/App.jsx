@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Import your components
 import OppositeDirectionalGif from '@/components/animations/gifs/OppositeDirectionalGif';
@@ -17,16 +17,15 @@ import TwoSumAnimation from '@/components/animations/interactive/TwoSumAnimation
 
 function App() {
     return (
-        <Router basename="/Animaitons">
+        <Router>
             <div className="App">
                 <Routes>
                     {/* Routes for gif animations */}
                     <Route path="/" element={
-                                            <div className="h-screen w-full flex items-center justify-center">
-                                                <h1 className="text-6xl font-bold">hii</h1>
-                                            </div>
-                                            } 
-                    />
+                        <div className="h-screen w-full flex items-center justify-center">
+                            <h1 className="text-6xl font-bold">hii</h1>
+                        </div>
+                    } />
                     <Route path="/opposite-directional-gif" element={<OppositeDirectionalGif />} />
                     <Route path="/parallel-gif" element={<ParallelGif />} />
                     <Route path="/partition-gif" element={<PartitionGif />} />
