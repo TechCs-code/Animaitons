@@ -20,19 +20,21 @@ function App() {
         <Router>
             <div className="App">
                 <Routes>
-                    {/* Routes for gif animations */}
+                    {/* Home Route */}
                     <Route path="/" element={
                         <div className="h-screen w-full flex items-center justify-center">
                             <h1 className="text-6xl font-bold">hii</h1>
                         </div>
                     } />
+
+                    {/* Routes for GIF animations */}
                     <Route path="/opposite-directional-gif" element={<OppositeDirectionalGif />} />
                     <Route path="/parallel-gif" element={<ParallelGif />} />
                     <Route path="/partition-gif" element={<PartitionGif />} />
                     <Route path="/same-directional-gif" element={<SameDirectionalGif />} />
                     <Route path="/sliding-window-gif" element={<SlidingWindowGif />} />
 
-                    {/* Routes for interactive animations */}
+                    {/* Routes for Interactive Animations */}
                     <Route path="/cycle-detection-animation" element={<CycleDetectionAnimation />} />
                     <Route path="/longest-substring-animation" element={<LongestSubstringAnimation />} />
                     <Route path="/max-average-animation" element={<MaxAverageAnimation />} />
