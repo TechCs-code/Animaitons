@@ -1,14 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-// Import your gif components
+// Import your components
 import OppositeDirectionalGif from '@/components/animations/gifs/OppositeDirectionalGif';
 import ParallelGif from '@/components/animations/gifs/ParallelGif';
 import PartitionGif from '@/components/animations/gifs/PartitionGif';
 import SameDirectionalGif from '@/components/animations/gifs/SameDirectionalGif';
 import SlidingWindowGif from '@/components/animations/gifs/SlidingWindowGif';
 
-// Import your interactive animation components
 import CycleDetectionAnimation from '@/components/animations/interactive/CycleDetectionAnimation';
 import LongestSubstringAnimation from '@/components/animations/interactive/LongestSubstringAnimation';
 import MaxAverageAnimation from '@/components/animations/interactive/MaxAverageAnimation';
@@ -18,7 +17,7 @@ import TwoSumAnimation from '@/components/animations/interactive/TwoSumAnimation
 
 function App() {
     return (
-        <Router>
+        <Router basename="/Animaitons">
             <div className="App">
                 <Routes>
                     {/* Routes for gif animations */}
